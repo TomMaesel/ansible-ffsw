@@ -9,7 +9,6 @@ collectd:
   collect_sysctl: false
 
 administratorenteam:
-  - "void" 
-  - "fungur"
   - "descilla"
   - "mpw"
+  - "marcus"

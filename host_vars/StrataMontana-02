@@ -1,0 +1,61 @@
+vm_id: 2
+server_id: 2
+server_besitzer: "Marcus Bickel"
+
+server_ipv4_nat: 185.66.194.48/32
+    
+ffrl_tun:
+- name: fra0
+  gre_target: 185.66.194.0
+  v4_local: 100.64.5.173/31
+  v4_remote: 100.64.5.172/31
+  v6_local: 2a03:2260:0:2d7::2/64
+  v6_remote: 2a03:2260:0:2d7::1/64
+- name: fra1
+  gre_target: 185.66.194.1
+  v4_local: 100.64.5.179/31
+  v4_remote: 100.64.5.178/31
+  v6_local: 2a03:2260:0:2da::2/64
+  v6_remote: 2a03:2260:0:2da::1/64
+- name: ber0
+  gre_target: 185.66.195.0
+  v4_local: 100.64.5.171/31
+  v4_remote: 100.64.5.170/31
+  v6_local: 2a03:2260:0:2d6::2/64
+  v6_remote: 2a03:2260:0:2d6::1/64
+- name: ber1
+  gre_target: 185.66.195.1
+  v4_local: 100.64.5.177/31
+  v4_remote: 100.64.5.176/31
+  v6_local: 2a03:2260:0:2d9::2/64
+  v6_remote: 2a03:2260:0:2d9::1/64
+- name: dus0
+  gre_target: 185.66.193.0
+  v4_local: 100.64.5.175/31
+  v4_remote: 100.64.5.174/31
+  v6_local: 2a03:2260:0:2d8::2/64
+  v6_remote: 2a03:2260:0:2d8::1/64
+- name: dus1
+  gre_target: 185.66.193.1
+  v4_local: 100.64.5.181/31
+  v4_remote: 100.64.5.180/31
+  v6_local: 2a03:2260:0:2db::2/64
+  v6_remote: 2a03:2260:0:2db::1/64
+
+domaenenliste:
+   "01":
+      dhcp_start: 10.1.160.26
+      dhcp_ende: 10.1.167.254
+      server_id: 2
+   "02":
+      dhcp_start: 10.1.168.26
+      dhcp_ende: 10.1.175.254
+      server_id: 2
+   "03":
+      dhcp_start: 10.1.176.26
+      dhcp_ende: 10.1.183.254
+      server_id: 2
+   "04":
+      dhcp_start: 10.1.184.26
+      dhcp_ende: 10.1.191.254
+      server_id: 2
