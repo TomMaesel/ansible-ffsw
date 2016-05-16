@@ -1,7 +1,6 @@
 [services]
-services    ansible_ssh_host=89.163.231.228
 
 [backbone]
 
 [gateways]
-StrataMontana-02	ansible_ssh_host=78.47.227.121
+GW04	ansible_ssh_host=178.63.78.115
